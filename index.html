@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IAS Spark – Skills Your Child Needs for the Future</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Tailwind (utility classes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animation.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════
+     NAVIGATION
+══════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <img src="./Icons/ias-spark-logo.svg" alt="">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#webinar">Webinar</a></li>
+      <li><a href="#host">Host</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <button class="orange-btn px-5 py-2.5 text-sm" class="sb-cta" onclick="document.getElementById('regSection').scrollIntoView({behavior:'smooth'})">Reserve my seat </button>
+  </div>
+</nav>
+
+<!-- ══════════════════════
+     HERO
+══════════════════════ -->
+<section class="hero-section lg:py-20 md:py-0 py-0">
+  <canvas id="heroWaveCanvas"></canvas>
+  <div class="hero-content">
+    <h1 class="fade-up d1 font-bold" style="font-size:clamp(1.802rem, 1.336rem + 2.3303vw, 3.4332rem);line-height:1.15;color:#fff;margin-bottom:6px;">
+      The Skills Your Child Needs for the Future <span class="fade-up d1 
+text-[clamp(1.802rem,1.336rem+2.3303vw,3.4332rem)] 
+leading-[1.15] 
+bg-gradient-to-r from-[#FF6B32] via-[#F09819] to-[#FF6932] 
+bg-clip-text text-transparent 
+mb-5 font-bold">
+  Are Not Taught in School
+</span>
+    </h1>
+
+    <p class="text-[#F0F0F0] text-[clamp(1rem,0.9643rem+0.1786vw,1.125rem)] leading-relaxed font-medium max-w-3xl mx-auto mb-10 fade-up d2">
+      Join our FREE Live Webinar for Parents and discover how students from Grade 5–10 can develop leadership, confidence, and critical thinking from an early age.
+    </p>
+
+
+<div class="flex flex-wrap gap-4 justify-center pb-6">
+
+<!-- Item 1 -->
+<div class="flex items-center gap-2 px-4 py-2 rounded-[12px] bg-gray-100 shadow-sm relative overflow-hidden w-auto max-w-full">
+  <!-- Top gradient border with 12px top border-radius -->
+  <div class="absolute top-0 left-0 w-full h-[3px] rounded-t-[12px] bg-[linear-gradient(270deg,#FF6B32_0%,#F09819_50%,#FF6932_100%)]"></div>
+
+  <!-- Icon -->
+ <img src="/Icons/hro-icon-1.svg" alt="" class="lg:w-[24px] md:w-[20px] w-[17px] lg:h-[24px] md:h-[20px] h-[17px]">
+
+  <!-- Text -->
+  <span class="text-gray-800 font-medium relative z-10 text-[clamp(0.72rem,0.8102rem+-0.1002vw,0.7901rem)]">Live Parents Webinar</span>
+</div>
+  <!-- Item 2 -->
+<div class="flex items-center gap-2 px-4 py-2 rounded-[12px] bg-gray-100 shadow-sm relative overflow-hidden w-auto max-w-full">
+  <!-- Top gradient border with 12px top border-radius -->
+  <div class="absolute top-0 left-0 w-full h-[3px] rounded-t-[12px] bg-[linear-gradient(270deg,#FF6B32_0%,#F09819_50%,#FF6932_100%)]"></div>
+
+  <!-- Icon -->
+ <img src="/Icons/hro-icon-2.svg" alt="" class="lg:w-[24px] md:w-[20px] w-[17px] lg:h-[24px] md:h-[20px] h-[17px]"">
+
+  <!-- Text -->
+  <span class="text-gray-800 font-medium relative z-10 text-[clamp(0.72rem,0.8102rem+-0.1002vw,0.7901rem)]">60 Minutes Webinar</span>
+</div>
+
+<!-- Item 3 -->
+<div class="flex items-center gap-2 px-4 py-2 rounded-[12px] bg-gray-100 shadow-sm relative overflow-hidden w-auto max-w-full">
+  <!-- Top gradient border with 12px top border-radius -->
+  <div class="absolute top-0 left-0 w-full h-[3px] rounded-t-[12px] bg-[linear-gradient(270deg,#FF6B32_0%,#F09819_50%,#FF6932_100%)]"></div>
+
+  <!-- Icon -->
+ <img src="/Icons/hro-icon-3.svg" alt="" class="lg:w-[24px] md:w-[20px] w-[17px] lg:h-[24px] md:h-[20px] h-[17px]"">
+
+  <!-- Text -->
+  <span class="text-gray-800 font-medium relative z-10 text-[clamp(0.72rem,0.8102rem+-0.1002vw,0.7901rem)]">Online Mode (Zoom)</span>
+</div>
+
+</div>
+
+    <!-- Countdown -->
+    <div class="fade-up d2 mb-8">
+      <div class="flex items-center justify-center gap-3">
+        <div class="countdown-box"><div id="days" class="text-white font-bold text-2xl">00</div><div class="text-white/45 text-[clamp(0.8889rem,0.8857rem+0.0159vw,0.9rem)] mt-1">Days</div></div>
+        <span class="text-white/40 text-2xl">:</span>
+        <div class="countdown-box"><div id="hours" class="text-white font-bold text-2xl">00</div><div class="text-white/45 text-[clamp(0.8889rem,0.8857rem+0.0159vw,0.9rem)] mt-1">Hrs</div></div>
+        <span class="text-white/40 text-2xl">:</span>
+        <div class="countdown-box"><div id="mins" class="text-white font-bold text-2xl">00</div><div class="text-white/45 text-[clamp(0.8889rem,0.8857rem+0.0159vw,0.9rem)] mt-1">Min</div></div>
+        <span class="text-white/40 text-2xl">:</span>
+        <div class="countdown-box"><div id="secs" class="text-white font-bold text-2xl">00</div><div class="text-white/45 text-[clamp(0.8889rem,0.8857rem+0.0159vw,0.9rem)] mt-1">Sec</div></div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 fade-up d3">
+      <button class="orange-btn px-10 py-4 text-[clamp(1.125rem,1.0446rem+0.4018vw,1.4063rem)] " class="sb-cta" onclick="document.getElementById('regSection').scrollIntoView({behavior:'smooth'})">Reserve my seat </button>
+  </div>
+</section>
+
+<!-- ══════════════════════
+     STICKY COUNTDOWN BAR
+══════════════════════ -->
+<div id="stickyBar">
+  <div class="sticky-bar-inner">
+
+    <!-- Timer blocks -->
+    <div class="sb-timer">
+      <div class="sb-unit">
+        <div class="sb-box"><span id="sb-days">02</span></div>
+        <span class="sb-label">Days</span>
+      </div>
+      <span class="sb-colon">:</span>
+      <div class="sb-unit">
+        <div class="sb-box"><span id="sb-hours">18</span></div>
+        <span class="sb-label">Hours</span>
+      </div>
+      <span class="sb-colon">:</span>
+      <div class="sb-unit">
+        <div class="sb-box"><span id="sb-mins">45</span></div>
+        <span class="sb-label">Minutes</span>
+      </div>
+      <span class="sb-colon">:</span>
+      <div class="sb-unit">
+        <div class="sb-box"><span id="sb-secs">53</span></div>
+        <span class="sb-label">Seconds</span>
+      </div>
+    </div>
+
+    <!-- Centre text -->
+    <p class="sb-notice">Only limited seats are available</p>
+
+    <!-- CTA -->
+    <button class="sb-cta" onclick="document.getElementById('regSection').scrollIntoView({behavior:'smooth'})">
+      Reserve my seat
+    </button>
+
+  </div>
+</div>
+
+<!-- ══════════════════════
+     TRUSTED BY PARENTS
+══════════════════════ -->
+<section id="trustedSection">
+
+  <!-- Top-right spinning circles -->
+  <div class="absolute -top-[30px] -right-[40px] lg:w-[240px] md:w-[180px] w-[100px] lg:h-[240px] md:h-[180px] h-[100px] pointer-events-none z-[2]">
+    <svg class="trust-circle-svg" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;overflow:visible;">
+      <g class="c1-wrap">
+        <circle class="c1" cx="160" cy="80" r="90" stroke="#1D3E9E" stroke-width="14" stroke-linecap="round" fill="none"/>
+      </g>
+      <g class="c2-wrap">
+        <circle class="c2" cx="110" cy="130" r="65" stroke="#e8722a" stroke-width="14" stroke-linecap="round" fill="none"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="max-w-[1280px] mx-auto px-[20px] md:px-[32px]">
+    <div style="text-align:center;margin-bottom:20px;">
+      <div class="font-bold" style="display:inline-flex;align-items:center;gap:8px;color:#1E3A8A;font-size:clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);font-weight:700;letter-spacing:0.08em;text-transform:uppercase;"><img src="./Icons/graduate.svg" alt=""> Trusted By Parents <img src="./Icons/graduate.svg" alt=""> </div>
+    </div>
+    <div style="text-align:center;margin-bottom:18px;">
+      <h2 class="font-bold" style="font-size:clamp(1.6018rem, 1.2747rem + 1.6354vw, 2.7466rem);color:#141414;line-height:1.2;margin-bottom:6px;">Trusted by Parents Who <span class="font-bold bg-gradient-to-r from-[#FF6B32] via-[#F09819] to-[#FF6932] bg-clip-text text-transparent " style="font-size:clamp(1.6018rem, 1.2747rem + 1.6354vw, 2.7466rem);line-height:1.2;"> Want More for Their Children</span></h2>
+    </div>
+    <p class="font-normal text-[clamp(1rem,0.9643rem+0.1786vw,1.125rem)]"style="text-align:center;color:#141414;line-height:1.75;max-width:560px;margin:0 auto 32px;">
+      IAS Spark is designed to help students develop the skills that traditional education often overlooks. Through mentorship and interactive learning, students begin to develop
+    </p>
+    <div class="flex flex-wrap justify-center gap-3 mb-8 lg:w-full md:w-[60%] w-[76%] mx-auto flex-col-reverse md:flex-row">
+      <div class="trust-pill"><span class="star"><img src="./Icons/star.svg" alt=""></span> Confidence in expressing ideas</div>
+      <div class="trust-pill"><span class="star"><img src="./Icons/star.svg" alt=""></span> Awareness of society</div>
+      <div class="trust-pill"><span class="star"><img src="./Icons/star.svg" alt=""></span> Critical thinking ability</div>
+      <div class="trust-pill"><span class="star"><img src="./Icons/star.svg" alt=""></span> Leadership mindset</div>
+      
+    </div>
+    <p class="text-[clamp(1rem,0.9643rem+0.1786vw,1.125rem)] font-normal text-center text-[#141414] leading-[1.75] max-w-full md:max-w-[86%] lg:max-w-[75%] mx-auto mb-12">
+      Parents who have attended IAS Spark sessions often notice
+      <strong class="bg-gradient-to-r from-[#FF6B32] via-[#F09819] to-[#FF6932] bg-clip-text text-transparent">positive changes in their child's confidence, curiosity, and communication</strong>
+    </p>
+  </div>
+
+  <!-- Testimonial Slider -->
+ <div class="max-w-[1280px] mx-auto relative px-[20px] md:px-[60px] pb-[60px]">
+    <div style="overflow:hidden;border-radius:0;" id="tsWrapper">
+      <div id="tsTrack" style="display:flex;will-change:transform;">
+      <!-- Clone of Slide 5 (prepended) -->
+<div class="ts-slide">
+  <div class="ts-card">
+    <div class="ts-qt">" The session gave a clear clarification about the children’s future "</div>
+    <div class="ts-body">
+      "I was skeptical at first, but the results speak for themselves. My child's teachers have noticed the improvement in his leadership qualities and how he expresses himself in class."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">F</div>
+        <div>
+          <div class="ts-name">Fathima Begam</div>
+          <div class="ts-role">Parent of Grade 8 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+
+  <div class="ts-card ts-card-alt">
+    <div class="ts-qt">" The session made a big difference to my son’s perspective "</div>
+    <div class="ts-body">
+      "My daughter has become so much more aware of what's happening around her. She now reads newspapers, debates current issues, and thinks critically. IAS Spark has been a game-changer."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">R</div>
+        <div>
+          <div class="ts-name">Rajesh Kannan</div>
+          <div class="ts-role">Parent of Grade 6 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 1 -->
+<div class="ts-slide">
+  <div class="ts-card">
+    <div class="ts-qt">" I can clearly see the difference in my son’s focus "</div>
+    <div class="ts-body">
+      "I was skeptical at first, but the results speak for themselves. My child's teachers have noticed the improvement in his leadership qualities and how he expresses himself in class."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">J</div>
+        <div>
+          <div class="ts-name">Joseph Vijay</div>
+          <div class="ts-role">Parent of Grade 9 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+
+  <div class="ts-card ts-card-alt">
+    <div class="ts-qt">" My daughter has become so much more aware of what's happening around her "</div>
+    <div class="ts-body">
+      "My daughter has become so much more aware of what's happening around her. She now reads newspapers, debates current issues, and thinks critically. IAS Spark has been a game-changer."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">S</div>
+        <div>
+          <div class="ts-name">Samantha Grace</div>
+          <div class="ts-role">Parent of Grade 5 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="ts-slide">
+  <div class="ts-card">
+    <div class="ts-qt">" The session gave a clear clarification about the children’s future "</div>
+    <div class="ts-body">
+      "I was skeptical at first, but the results speak for themselves. My child's teachers have noticed the improvement in his leadership qualities and how he expresses himself in class."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">F</div>
+        <div>
+          <div class="ts-name">Fathima Begam</div>
+          <div class="ts-role">Parent  of Grade 8 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+
+  <div class="ts-card ts-card-alt">
+    <div class="ts-qt">" The session made a big difference to my son’s perspective "</div>
+    <div class="ts-body">
+      "My daughter has become so much more aware of what's happening around her. She now reads newspapers, debates current issues, and thinks critically. IAS Spark has been a game-changer."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">R</div>
+        <div>
+          <div class="ts-name">Rajesh Kannan</div>
+          <div class="ts-role">Parent of Grade 6 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 3 -->
+<div class="ts-slide">
+  <div class="ts-card">
+    <div class="ts-qt">" I can clearly see the difference in my son’s focus "</div>
+    <div class="ts-body">
+      "I was skeptical at first, but the results speak for themselves. My child's teachers have noticed the improvement in his leadership qualities and how he expresses himself in class."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">J</div>
+        <div>
+          <div class="ts-name">Joseph Vijay</div>
+          <div class="ts-role">Parent of Grade 9 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+
+  <div class="ts-card ts-card-alt">
+    <div class="ts-qt">" My daughter has become so much more aware of what's happening around her "</div>
+    <div class="ts-body">
+      "My daughter has become so much more aware of what's happening around her. She now reads newspapers, debates current issues, and thinks critically. IAS Spark has been a game-changer."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">S</div>
+        <div>
+          <div class="ts-name">Samantha Grace</div>
+          <div class="ts-role">Parent of Grade 5 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 4 -->
+<div class="ts-slide">
+  <div class="ts-card">
+    <div class="ts-qt">" The session gave a clear clarification about the children’s future "</div>
+    <div class="ts-body">
+      "I was skeptical at first, but the results speak for themselves. My child's teachers have noticed the improvement in his leadership qualities and how he expresses himself in class."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">F</div>
+        <div>
+          <div class="ts-name">Fathima Begam</div>
+          <div class="ts-role">Parent  of Grade 8 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+
+  <div class="ts-card ts-card-alt">
+    <div class="ts-qt">" The session made a big difference to my son’s perspective "</div>
+    <div class="ts-body">
+      "My daughter has become so much more aware of what's happening around her. She now reads newspapers, debates current issues, and thinks critically. IAS Spark has been a game-changer."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">R</div>
+        <div>
+          <div class="ts-name">Rajesh Kannan</div>
+          <div class="ts-role">Parent of Grade 6 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 5 -->
+<div class="ts-slide">
+  <div class="ts-card">
+    <div class="ts-qt">" I can clearly see the difference in my son’s focus "</div>
+    <div class="ts-body">
+      "I was skeptical at first, but the results speak for themselves. My child's teachers have noticed the improvement in his leadership qualities and how he expresses himself in class."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">J</div>
+        <div>
+          <div class="ts-name">Joseph Vijay</div>
+          <div class="ts-role">Parent of Grade 9 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+
+  <div class="ts-card ts-card-alt">
+    <div class="ts-qt">" My daughter has become so much more aware of what's happening around her "</div>
+    <div class="ts-body">
+      "My daughter has become so much more aware of what's happening around her. She now reads newspapers, debates current issues, and thinks critically. IAS Spark has been a game-changer."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">S</div>
+        <div>
+          <div class="ts-name">Samantha Grace</div>
+          <div class="ts-role">Parent of Grade 5 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+
+<!-- Clone of Slide 1 (appended) -->
+<div class="ts-slide">
+  <div class="ts-card">
+    <div class="ts-qt">" I can clearly see the difference in my son’s focus "</div>
+    <div class="ts-body">
+      "I was skeptical at first, but the results speak for themselves. My child's teachers have noticed the improvement in his leadership qualities and how he expresses himself in class."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">J</div>
+        <div>
+          <div class="ts-name">Joseph Vijay</div>
+          <div class="ts-role">Parent of Grade 9 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+
+  <div class="ts-card ts-card-alt">
+    <div class="ts-qt">" My daughter has become so much more aware of what's happening around her "</div>
+    <div class="ts-body">
+      "My daughter has become so much more aware of what's happening around her. She now reads newspapers, debates current issues, and thinks critically. IAS Spark has been a game-changer."
+    </div>
+    <div class="ts-footer">
+      <div class="ts-user">
+        <div class="ts-av">S</div>
+        <div>
+          <div class="ts-name">Samantha Grace</div>
+          <div class="ts-role">Parent of Grade 5 Student</div>
+        </div>
+      </div>
+      <div class="ts-stars">★★★★★</div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <!-- Dots -->
+    <div style="display:flex;justify-content:center;gap:10px;margin-top:28px;">
+      <button class="ts-dot ts-dot-active" onclick="tsGoTo(0)"></button>
+      <button class="ts-dot" onclick="tsGoTo(1)"></button>
+      <button class="ts-dot" onclick="tsGoTo(2)"></button>
+      <button class="ts-dot" onclick="tsGoTo(3)"></button>
+      <button class="ts-dot" onclick="tsGoTo(4)"></button>
+    </div>
+  </div>
+</section>
+<!-- Custom slider cursor -->
+<div id="tsCursor">›</div>
+
+
+
+<!-- ══════════════════════
+     THE PROBLEM
+══════════════════════ -->
+<section id="probSection">
+  <div id="probSvgWrap" style="position:absolute;left:-60px;top:50%;transform:translateY(-50%);width:220px;height:260px;pointer-events:none;z-index:2;">
+    <svg viewBox="0 0 180 260" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;overflow:visible;">
+      <circle class="prob-ring-outer" cx="90" cy="90" r="89" stroke="rgba(255,255,255,0.25)" stroke-width="16" stroke-linecap="round" fill="none"/>
+      <circle class="prob-ring-inner" cx="55" cy="180" r="54" stroke="#e8722a" stroke-width="16" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+<div class="max-w-[1280px] mx-auto relative z-[5] px-[20px] md:px-[46px] lg:pl-[100px] lg:pr-[48px]">
+    <div style="text-align:center;margin-bottom:16px;">
+      <span class="inline-flex items-center gap-2 text-[#F0F0F0] text-[clamp(0.8889rem,0.8857rem+0.0159vw,0.9rem)] font-bold tracking-[0.1em] uppercase">
+  <img src="/Icons/graduate.svg" alt="" class="w-[40px] h-[40px]">
+  The Problem
+  <img src="/Icons/graduate.svg" alt="" class="w-[40px] h-[40px]">
+</span>
+    </div>
+    <h2 class="font-bold" style="font-size:clamp(1.8rem,3.5vw,2.6rem);color:#fff;text-align:center;line-height:1.2;margin-bottom:24px;">
+      The Gap in <span style="color:#e8722a;">Today's Education</span>
+    </h2>
+    <p class="font-normal text-center text-white/75 leading-[1.6] lg:max-w-[90%] mb-[52px] md:max-w-full sm:mb-[34px]"
+   style="font-size:clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);">
+      Most schools prepare students for exams and marks. But the world
+      <strong class="font-bold" style="color:#e8722a; font-size: clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);">outside school demands something very different</strong>.
+      Success today depends on a child's ability. Unfortunately, many bright students
+      <strong style="color:#e8722a; font-size: clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);">never get the opportunity</strong> to develop these essential skills.
+    </p>
+   <div class="grid grid-cols-1 md:grid-cols-2 gap-x-[40px]">
+      <div class="prob-feat" style="transition-delay:0.05s;">
+       <img src="/Icons/prblm-icon1.svg" alt="" class="w-[60px] h-[60px]">
+        <div><h4>Think independently</h4><p>of students struggle with independent thinking</p></div>
+      </div>
+      <div class="col-span-full h-[1px] bg-white/10 my-1 md:hidden"></div>
+      <div class="prob-feat" style="transition-delay:0.15s;">
+           <img src="/Icons/prblm-icon2.svg" alt="" class="w-[60px] h-[60px]">
+        <div><h4>Communicate clearly</h4><p>lack confidence in public speaking</p></div>
+      </div>
+      <div style="grid-column:1/-1;height:1px;background:rgba(255,255,255,0.1);margin:4px 0;"></div>
+      <div class="prob-feat" style="transition-delay:0.25s;">
+        <img src="/Icons/prblm-icon3.svg" alt="" class="w-[60px] h-[60px]">
+        <div><h4>Solve real-world problems</h4><p>never exposed to real-world challenges</p></div>
+      </div>
+      <div class="col-span-full h-[1px] bg-white/10 my-1 md:hidden"></div>
+      <div class="prob-feat" style="transition-delay:0.35s;">
+       <img src="/Icons/prblm-icon4.svg" alt="" class="w-[60px] h-[60px]">
+        <div><h4>Understand society and leadership</h4><p>have zero guidance on governance or civics</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ══════════════════════
+     WHAT YOU WILL LEARN
+══════════════════════ -->
+<section id="oppSection">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-14">
+    <div class="opp-heading" style="text-align:center;margin-bottom:52px;">
+      <div style="display:inline-flex;align-items:center;gap:8px;color:#1E3A8A;font-size:clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:36px;"><img src="/Icons/graduate.svg" alt="">The Opportunity <img src="/Icons/graduate.svg" alt=""></div>
+      <h2 class="font-bold"
+    style="
+      font-size:clamp(1.6018rem, 1.2747rem + 1.6354vw, 2.7466rem);
+      line-height:1.2;
+      margin-bottom:6px;
+      background: linear-gradient(270deg, #FF6B32 0%, #F09819 50%, #FF6932 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    ">
+  What You Will Learn
+</h2>
+      <h2 class="font-bold" style="font-size:clamp(1.6018rem, 1.2747rem + 1.6354vw, 2.7466rem);color:#141414;line-height:1.2;">In This Free Webinar You Will Discover</h2>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-[56px] items-start">
+      <!-- Image grid -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start;">
+        <div style="display:flex;flex-direction:column;gap:35px;padding-top:60px;">
+          <div class="opp-photo opp-img-left" style="height:100%;transition-delay:0.1s;">
+            <img src="/Icons/oopourinity-icon1.svg" alt="Speaker at podium" loading="lazy"/>
+          </div>
+          <div class="opp-photo opp-img-left" style="height:100%;transition-delay:0.3s;">
+            <img src="/Icons/oopourinity-icon2.svg" alt="Student learning" loading="lazy"/>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <div class="opp-photo opp-img-right" style="height:100%;transition-delay:0.2s;">
+            <img src="/Icons/oopourinity-icon3.svg" alt="Child presenting" loading="lazy"/>
+          </div>
+          <div class="opp-photo opp-img-right" style="height:100%;transition-delay:0.4s;">
+            <img src="/Icons/oopourinity-icon4.svg" alt="Student thinking" loading="lazy"/>
+          </div>
+        </div>
+      </div>
+      <!-- Feature list -->
+      <div style="padding-top:10px;">
+        <p class="opp-heading" style="font-weight:700;font-size:clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);color:#141414;margin-bottom:22px;transition-delay:0.15s;">Imagine your child becoming someone who can</p>
+        <div class="opp-row" style="transition-delay:0.1s;"><img src="/Icons/oprunity-icon1.svg" alt=""><span>Speak confidently in any discussion</span></div>
+        <div class="opp-row" style="transition-delay:0.1s;"><img src="/Icons/oprunity-icon2.svg" alt=""><span>Understand real-world issues</span></div>
+        <div class="opp-row" style="transition-delay:0.1s;"><img src="/Icons/oprunity-icon3.svg" alt=""><span>Think logically and independently</span></div>
+        <div class="opp-row" style="transition-delay:0.1s;"><img src="/Icons/oprunity-icon4.svg" alt=""><span>Express ideas with clarity</span></div>
+        <div class="opp-row" style="transition-delay:0.1s;"><img src="/Icons/oprunity-icon5.svg" alt=""><span>Develop a leadership mindset</span></div>
+         <p style="font-size:clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);color:#141414;margin-top:20px;line-height:1.7;">These are the qualities that shape future leaders.</p>
+        <button class="orange-btn" style="margin-top:24px;padding:13px 32px;font-size:0.88rem;border-radius:8px;" class="sb-cta" onclick="document.getElementById('regSection').scrollIntoView({behavior:'smooth'})">Reserve My Free Seat</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ══════════════════════
+     WHAT YOU WILL LEARN TABLET
+══════════════════════ -->
+
+
+<section class="hidden md:block lg:hidden py-14 px-5 bg-[#FFF2E2]">
+  <div class="max-w-[1280px] mx-auto">
+
+    <!-- HEADER -->
+    <div class="text-center mb-10 md:mb-14">
+      <div style="display:inline-flex;align-items:center;gap:8px;color:#1E3A8A;font-size:clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:36px;"><img src="/Icons/graduate.svg" alt="">The Opportunity <img src="/Icons/graduate.svg" alt=""></div>
+
+      <h2 class="font-extrabold leading-tight text-[1.6rem] md:text-[2rem]">
+        <span class="bg-gradient-to-r from-[#FF6B32] via-[#F09819] to-[#FF6932] bg-clip-text text-transparent">
+          In This Free Webinar,
+        </span><br/>
+        <span class="text-[#141414]">You Will Discover</span>
+      </h2>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="relative py-5 pb-10">
+
+      <!-- vertical dashed line -->
+      <div class="absolute left-1/2 top-0 bottom-0 border-l-2 border-dashed border-[#FF6B32] -translate-x-1/2"></div>
+
+      <!-- ITEMS -->
+      <div class="flex flex-col">
+
+        <!-- ITEM 1 -->
+        <div class="relative flex items-center h-[130px]">
+          <div class="absolute left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-[#FF6B32] border-[3px] border-white rounded-full shadow-[0_0_0_2px_rgba(255,107,50,0.3)]"></div>
+
+          <div class="absolute left-[calc(50%-320px)] w-[240px] bg-[#1E3A8A] text-white rounded-[10px] px-5 py-4 text-[14px] leading-[1.5] font-medium">
+            Why traditional education is not enough in today's world
+          </div>
+
+          <div class="absolute left-[calc(50%-80px)] w-[80px] border-t-2 border-dashed border-[#FF6B32]"></div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="relative flex items-center h-[130px]">
+          <div class="absolute left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-[#FF6B32] border-[3px] border-white rounded-full shadow-[0_0_0_2px_rgba(255,107,50,0.3)]"></div>
+
+          <div class="absolute left-[calc(50%+80px)] w-[240px] bg-[#1E3A8A] text-white rounded-[10px] px-5 py-4 text-[14px] leading-[1.5] font-medium">
+            The 5 essential skills every child must develop before age 18
+          </div>
+
+          <div class="absolute left-1/2 w-[80px] border-t-2 border-dashed border-[#FF6B32]"></div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="relative flex items-center h-[130px]">
+          <div class="absolute left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-[#FF6B32] border-[3px] border-white rounded-full shadow-[0_0_0_2px_rgba(255,107,50,0.3)]"></div>
+
+          <div class="absolute left-[calc(50%-320px)] w-[240px] bg-[#1E3A8A] text-white rounded-[10px] px-5 py-4 text-[14px] leading-[1.5] font-medium">
+            How leadership thinking can be nurtured from school years
+          </div>
+
+          <div class="absolute left-[calc(50%-80px)] w-[80px] border-t-2 border-dashed border-[#FF6B32]"></div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="relative flex items-center h-[130px]">
+          <div class="absolute left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-[#FF6B32] border-[3px] border-white rounded-full shadow-[0_0_0_2px_rgba(255,107,50,0.3)]"></div>
+
+          <div class="absolute left-[calc(50%+80px)] w-[240px] bg-[#1E3A8A] text-white rounded-[10px] px-5 py-4 text-[14px] leading-[1.5] font-medium">
+            How IAS Spark mentors guide students to think independently
+          </div>
+
+          <div class="absolute left-1/2 w-[80px] border-t-2 border-dashed border-[#FF6B32]"></div>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="relative flex items-center h-[130px]">
+          <div class="absolute left-1/2 -translate-x-1/2 w-[18px] h-[18px] bg-[#FF6B32] border-[3px] border-white rounded-full shadow-[0_0_0_2px_rgba(255,107,50,0.3)]"></div>
+
+          <div class="absolute left-[calc(50%-320px)] w-[240px] bg-[#1E3A8A] text-white rounded-[10px] px-5 py-4 text-[14px] leading-[1.5] font-medium">
+            Simple ways parents can encourage confidence and awareness in their children
+          </div>
+
+          <div class="absolute left-[calc(50%-80px)] w-[80px] border-t-2 border-dashed border-[#FF6B32]"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="block md:hidden py-14 px-5 bg-[#FFF2E2]">
+  <div class="max-w-[480px] mx-auto">
+
+    <!-- HEADER -->
+    <div class="text-center mb-10">
+<div style="display:inline-flex;align-items:center;gap:8px;color:#1E3A8A;font-size:clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:36px;"><img src="/Icons/graduate.svg" alt="">WHAT YOU WILL LEARN<img src="/Icons/graduate.svg" alt=""></div>
+
+      <h2 class="font-extrabold leading-tight text-[1.55rem]">
+        In This Free Webinar,<br/>
+        <span style="background:linear-gradient(270deg,#FF6B32 0%,#F09819 50%,#FF6932 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">You Will Discover</span>
+      </h2>
+    </div>
+
+    <!-- SNAKE SECTION -->
+    <div class="relative" id="snakeWrap">
+      <svg id="snakeSvg" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;overflow:visible;"></svg>
+    </div>
+
+  </div>
+</section>
+
+<script>
+const items = [
+  { num: "01", text: "Why traditional education is not enough in today's world" },
+  { num: "02", text: "The 5 essential skills every child must develop before age 18" },
+  { num: "03", text: "How leadership thinking can be nurtured from school years" },
+  { num: "04", text: "How IAS Spark mentors guide students to think independently" },
+  { num: "05", text: "Simple ways parents can encourage confidence and awareness in their children" },
+];
+
+function build() {
+  const wrap = document.getElementById('snakeWrap');
+  const svg  = document.getElementById('snakeSvg');
+  svg.innerHTML = '';
+
+  const W    = wrap.offsetWidth || 340;
+  const ROW  = 155;          // vertical spacing between dots
+  const PAD  = 40;           // top padding before first dot
+  const H    = PAD + ROW * items.length + 40;
+
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('height', H);
+
+  // Dot positions: alternate left-of-center / right-of-center
+  // 01 → right side, 02 → left, 03 → right … matching reference image
+  const dotX = (i) => i % 2 === 0 ? W * 0.62 : W * 0.38;
+  const dotY = (i) => PAD + i * ROW;
+
+  const pts = items.map((_, i) => ({ x: dotX(i), y: dotY(i) }));
+
+  /* ── Build smooth cubic bezier path through all dot centres ── */
+  // The snake swings wide left/right between consecutive dots
+  const swing = W * 0.22;   // how far the control points swing sideways
+
+  let d = `M ${pts[0].x} ${pts[0].y}`;
+  for (let i = 0; i < pts.length - 1; i++) {
+    const A = pts[i], B = pts[i + 1];
+    const midY = (A.y + B.y) / 2;
+    // Control points swing toward the OPPOSITE side of the next dot
+    const cpAx = A.x + (A.x > W/2 ? swing : -swing);
+    const cpBx = B.x + (B.x > W/2 ? swing : -swing);
+    d += ` C ${cpAx} ${midY}, ${cpBx} ${midY}, ${B.x} ${B.y}`;
+  }
+  // Tail continuation below last dot
+  const last = pts[pts.length - 1];
+  d += ` C ${last.x} ${last.y + 50}, ${last.x + (last.x > W/2 ? swing*0.6 : -swing*0.6)} ${last.y + 70}, ${last.x} ${last.y + 80}`;
+
+  /* ── Dashed curved path ── */
+  const ns = 'http://www.w3.org/2000/svg';
+
+  // Thin background stroke (solid, light) for the track feel
+  const trackPath = document.createElementNS(ns, 'path');
+  trackPath.setAttribute('d', d);
+  trackPath.setAttribute('fill', 'none');
+  trackPath.setAttribute('stroke', 'rgba(255,107,50,0.15)');
+  trackPath.setAttribute('stroke-width', '3');
+  svg.appendChild(trackPath);
+
+  // Main dashed orange path
+  const dashPath = document.createElementNS(ns, 'path');
+  dashPath.setAttribute('d', d);
+  dashPath.setAttribute('fill', 'none');
+  dashPath.setAttribute('stroke', '#FF6B32');
+  dashPath.setAttribute('stroke-width', '2.2');
+  dashPath.setAttribute('stroke-dasharray', '6 5');
+  dashPath.setAttribute('stroke-linecap', 'round');
+  svg.appendChild(dashPath);
+
+  /* ── Dots, rings, numbers, text ── */
+  pts.forEach((p, i) => {
+    const isRight = p.x > W / 2; // dot on right side → text on left
+
+    // Outer glow ring
+    const ring = document.createElementNS(ns, 'circle');
+    ring.setAttribute('cx', p.x); ring.setAttribute('cy', p.y);
+    ring.setAttribute('r', '16');
+    ring.setAttribute('fill', 'rgba(255,107,50,0.12)');
+    svg.appendChild(ring);
+
+    // Middle ring border
+    const mid = document.createElementNS(ns, 'circle');
+    mid.setAttribute('cx', p.x); mid.setAttribute('cy', p.y);
+    mid.setAttribute('r', '11');
+    mid.setAttribute('fill', '#EEEAE3');
+    mid.setAttribute('stroke', '#FF6B32');
+    mid.setAttribute('stroke-width', '2');
+    svg.appendChild(mid);
+
+    // Inner filled dot
+    const dot = document.createElementNS(ns, 'circle');
+    dot.setAttribute('cx', p.x); dot.setAttribute('cy', p.y);
+    dot.setAttribute('r', '5');
+    dot.setAttribute('fill', '#FF6B32');
+    svg.appendChild(dot);
+
+    // Number beside dot (opposite side from text)
+    const numX = isRight ? p.x + 26 : p.x - 26;
+    const numAnchor = isRight ? 'start' : 'end';
+    const numEl = document.createElementNS(ns, 'text');
+    numEl.setAttribute('x', numX);
+    numEl.setAttribute('y', p.y + 6);
+    numEl.setAttribute('text-anchor', numAnchor);
+    numEl.setAttribute('fill', '#1E3A8A');
+    numEl.setAttribute('font-size', '17');
+    numEl.setAttribute('font-weight', '700');
+    numEl.setAttribute('font-family', 'Inter, sans-serif');
+    numEl.textContent = items[i].num;
+    svg.appendChild(numEl);
+
+    // Description text block (opposite side from dot)
+    const textMaxW = isRight ? p.x - 32 : W - p.x - 32;
+    const textX    = isRight ? 0 : p.x + 32;
+    const textAnchor = isRight ? 'start' : 'start';
+
+    // Wrap text manually into lines
+    const words = items[i].text.split(' ');
+    const lineH = 17;
+    const charsPerLine = Math.floor(textMaxW / 7.5);
+    let lines = [], cur = '';
+    words.forEach(w => {
+      if ((cur + ' ' + w).trim().length > charsPerLine) {
+        if (cur) lines.push(cur.trim());
+        cur = w;
+      } else {
+        cur = (cur + ' ' + w).trim();
+      }
+    });
+    if (cur) lines.push(cur.trim());
+
+    const totalTextH = lines.length * lineH;
+    const startY = p.y - totalTextH / 2 + 5;
+
+    lines.forEach((line, li) => {
+      const t = document.createElementNS(ns, 'text');
+      t.setAttribute('x', isRight ? textX : W - 4);
+      t.setAttribute('y', startY + li * lineH);
+      t.setAttribute('text-anchor', isRight ? 'start' : 'end');
+      t.setAttribute('fill', '#1a1a1a');
+      t.setAttribute('font-size', '12.5');
+      t.setAttribute('font-family', 'Inter, sans-serif');
+      t.setAttribute('font-weight', li === 0 ? '500' : '400');
+      t.textContent = line;
+      svg.appendChild(t);
+    });
+  });
+}
+
+build();
+window.addEventListener('resize', build);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ══════════════════════
+     DISCOVER SCROLL TIMELINE
+══════════════════════ -->
+<section id="discoverSection" class="hidden lg:block">
+  <div id="discoverSticky">
+    <div style="text-align:center;padding-top:30px;position:relative;z-index:10;">
+      <div style="display:inline-flex;align-items:center;font-family:'Raleway',sans-serif;gap:8px;color:#1E3A8A;font-size:clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);font-weight:700;letter-spacing:0.1em;margin-bottom:16px;"><img src="/Icons/graduate.svg" alt=""> What You Will Learn <img src="/Icons/graduate.svg" alt=""></div>
+      <h2 style="font-family:'Raleway',sans-serif;font-weight:700;font-size:clamp(1.6018rem, 1.2747rem + 1.6354vw, 2.7466rem);color:#1a1a2e;line-height:1.25;margin-bottom:2px;">In This Free Webinar, <span style="color:#e8722a ;font-family:'Raleway',sans-serif;">You Will Discover</span></h2>
+    </div>
+    <canvas id="discCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;pointer-events:none;"></canvas>
+    <div class="disc2-card" id="disc2Card1" style="left:7%;top:30%;"><p>Why traditional education is not enough in today’s world</p></div>
+    <div class="disc2-dot"  id="disc2Dot1"></div>
+    <div class="disc2-card" id="disc2Card2" style="left:21%;top:60%;"><p>The 5 essential skills every child must develop before age 18</p></div>
+    <div class="disc2-dot"  id="disc2Dot2"></div>
+    <div class="disc2-card" id="disc2Card3" style="left:38%;top:30%;"><p>How leadership thinking can be nurtured from school years</p></div>
+    <div class="disc2-dot"  id="disc2Dot3"></div>
+    <div class="disc2-card" id="disc2Card4" style="left:55%;top:60%;"><p>How IAS Spark mentors guide students to think independently</p></div>
+    <div class="disc2-dot"  id="disc2Dot4"></div>
+    <div class="disc2-card" id="disc2Card5" style="left:73%;top:30%;"><p>Simple ways parents can encourage confidence and awareness in their children</p></div>
+    <div class="disc2-dot"  id="disc2Dot5"></div>
+  </div>
+</section>
+
+
+
+<section id="aboutSection">
+  <div id="aboutInner">
+
+    <!-- LEFT: scrolling cards -->
+    <div id="aboutContentCol">
+
+      <!-- Heading -->
+      <div class="about-heading" id="aboutHead">
+        <h2 style="font-family:'Raleway',sans-serif;font-weight:700;font-size:clamp(1.6018rem, 1.2747rem + 1.6354vw, 2.7466rem);color:#fff;line-height:1.2;margin-bottom:16px;">
+          About <span style="
+  background: linear-gradient(270deg, #FF6B32 0%, #F09819 50%, #FF6932 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+">
+  IAS Spark
+</span>
+        </h2>
+        <p style="font-size:clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);color:rgba(255,255,255,0.75);line-height:1.5;font-family:'Plus Jakarta Sans',sans-serif;max-width:520px;">
+          IAS Spark is a mentorship-based learning initiative designed to help
+          <strong style="color:#e8722a;">school students develop leadership thinking and awareness of the world around them.</strong>
+          Through structured discussions, real-world topics, and guided mentorship, students learn to
+        </p>
+      </div>
+
+      <!-- 4 stacked cards (single column) -->
+      <div class="about-card-wrap">
+
+        <div class="about-sc" style="transition-delay:0.05s;">
+          <h4>
+            <img src="/Icons/aboutus-icon1.svg" alt="">
+            Think critically
+          </h4>
+          <div class="about-sc-bullet">Develop analytical minds that question and understand</div>
+          <div class="about-sc-bullet">Encourage critical thinking to question, analyze, and reason clearly</div>
+        </div>
+
+        <div class="about-sc" style="transition-delay:0.12s;">
+          <h4>
+            <img src="/Icons/aboutus-icon2.svg" alt="">
+            Communicate confidently
+          </h4>
+          <div class="about-sc-bullet">Express ideas clearly with confidence and clarity</div>
+          <div class="about-sc-bullet">Build strong communication skills to speak and present effectively</div>
+        </div>
+
+        <div class="about-sc" style="transition-delay:0.2s;">
+          <h4>
+           <img src="/Icons/aboutus-icon3.svg" alt="">
+           Understand society and governance
+          </h4>
+          <div class="about-sc-bullet">Develop awareness of society, systems, and how governance works</div>
+          <div class="about-sc-bullet">Understand real-world structures and civic responsibilities</div>
+        </div>
+
+        <div class="about-sc" style="transition-delay:0.28s;">
+          <h4>
+            <img src="/Icons/aboutus-icon4.svg" alt="">
+            Build leadership qualities
+          </h4>
+          <div class="about-sc-bullet">Develop leadership skills to guide, influence, and take initiative</div>
+          <div class="about-sc-bullet">Build confidence to lead with responsibility and decision-making</div>
+        </div>
+
+      </div>
+
+      <!-- Quote -->
+      <div class="about-quote2" id="aboutQuote">
+        <p style="font-family:'Raleway',sans-serif;font-style:italic;font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,0.92);line-height:1.7;margin-bottom:14px;">
+          "To Help Children Grow Into Confident Thinkers And Responsible Future Leaders"
+        </p>
+        <div style="display:flex;align-items:center;gap:12px;justify-content:flex-end;">
+          <div style="width:40px;height:2px;background:#e8722a;border-radius:2px;"></div>
+          <span style="font-size:0.82rem;color:rgba(255,255,255,0.6);font-family:'Plus Jakarta Sans',sans-serif;">
+            That's the goal of <span style="color:#e8722a;font-weight:600;">IAS Spark</span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: sticky image -->
+    <div id="aboutImgCol">
+      <div style="position:relative;border-radius:22px;overflow:hidden;">
+         <img src="/Assests/aboutus.webp" alt=""  class=" hidden lg:block">
+         <img src="/Icons/host-tab.svg" alt=""  class="block md:block lg:hidden">
+        <div style="position:absolute;bottom:0;left:0;right:0;height:70px;background:linear-gradient(to top,rgba(15,30,110,0.5),transparent);pointer-events:none;"></div>
+        <div class="about-badge">
+          <div class="about-badge-num">10,000+</div>
+          <div class="about-badge-text">Students Transformed</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="hostSection">
+
+  <!-- Floating orbs -->
+  <div class="hs-orb" style="width:500px;height:500px;top:-200px;right:-150px;background:rgba(232,114,42,0.08);animation:hsDrift1 10s ease-in-out infinite;"></div>
+  <div class="hs-orb" style="width:400px;height:400px;bottom:-150px;left:-120px;background:rgba(29,62,158,0.06);animation:hsDrift2 13s ease-in-out infinite;"></div>
+
+  <!-- Twinkling star dots -->
+  <div class="hs-stars-bg" id="hsStarsBg"></div>
+
+  <div class="hs-wrap">
+
+
+
+    <!-- Main grid -->
+    <div class="hs-grid">
+
+      <!-- LEFT: Image -->
+      <div class="hs-img-col" id="hsImgCol">
+        <div class="hs-ring"></div>
+        <div class="hs-ring2"></div>
+        <div class="hs-img-box">
+          <img src="/Icons/host-icon.svg" alt="" class="hidden lg:block">
+          <img src="/Icons/host-tab-2.svg" alt="" class="block md:block lg:hidden">
+        </div>
+        <!-- Top-right award badge -->
+        <div class="hs-award" id="hsAwardBadge">
+          <div class="hs-award-icon"><img src="/Icons/SH FIGMA.svg" alt=""></div>
+          <div class="hs-award-num">Top</div>
+          <div class="hs-award-txt">Educator Award</div>
+        </div>
+        <!-- Bottom trust strip -->
+        <div class="hs-trust" id="hsTrust">
+          <div class="hs-trust-div"></div>
+          <div class="hs-trust-item">
+            <div class="hs-trust-val d-flex align-items-center gap-2">4.9<img src="/Icons/star.svg" alt=""></div>
+            <div class="hs-trust-lbl">Rating</div>
+          </div>
+          <div class="hs-trust-div"></div>
+          <div class="hs-trust-item">
+            <div class="hs-trust-val">150+</div>
+            <div class="hs-trust-lbl">Sessions</div>
+          </div>
+          <div class="hs-trust-div"></div>
+          <div class="hs-trust-item">
+            <div class="hs-trust-val">20+</div>
+            <div class="hs-trust-lbl">Years Exp.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Content -->
+      <div class="hs-right" id="hsRight">
+            <!-- Heading -->
+    <div style="margin-bottom:0;">
+      <div class="inline-flex items-center gap-2">
+  <img src="/Icons/graduate.svg" alt="" class="w-[40px] h-[40px]">
+  <span class="text-[#1E3A8A] font-bold">Meet the Speaker</span>
+  <img src="/Icons/graduate.svg" alt="" class="w-[40px] h-[40px]">
+</div>
+      <h2 class="hs-h2" id="hsH2">Meet your <span>webinar host</span></h2>
+    </div>
+        <h3 class="hs-name">Radha Krishnan</h3>
+        <div class="hs-role-tag">✦ Child Development Expert & Parenting Coach</div>
+        <p class="hs-bio">
+          An experienced educator and mentor dedicated to helping young students develop leadership thinking, awareness of society, and confidence in communication. Through programs like IAS Spark, students are guided to become curious learners and independent thinkers.
+        </p>
+
+       <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-6">
+
+  <!-- Row 1 -->
+  <div class="hs-sc">
+    <span class="hs-sc-num" data-target="10" data-suffix="+">0</span>
+    <div class="hs-sc-lbl"><p>Years of experience</p></div>
+  </div>
+
+  <div class="hs-sc">
+    <span class="hs-sc-num" data-target="1500">0</span>
+    <div class="hs-sc-lbl"><p>Students trained</p></div>
+  </div>
+
+  <div class="hs-sc">
+    <span class="hs-sc-num" data-target="150" data-suffix="+">0</span>
+    <div class="hs-sc-lbl"><p>Webinars conducted</p></div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="hs-sc">
+    <span class="hs-sc-num" data-target="20" data-suffix="+">0</span>
+    <div class="hs-sc-lbl"><p>Certified Experts</p></div>
+  </div>
+
+  <div class="hs-sc">
+    <span class="hs-sc-num" data-target="1500" data-suffix="+">0</span>
+    <div class="hs-sc-lbl"><p>Happy Parents</p></div>
+  </div>
+
+  <div class="hs-sc" style="background:linear-gradient(135deg,#e8722a,#f5a623);border-color:transparent;">
+    <span class="hs-sc-num" style="color:#fff;" data-target="98" data-suffix="%">0</span>
+    <div class="hs-sc-lbl" style="color:rgba(255,255,255,0.85);">Success Rate</div>
+  </div>
+
+</div>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="whoSection" class="py-12 md:py-16 lg:py-20">
+  <div class="max-w-[1220px] mx-auto px-5 md:px-10">
+
+    <!-- Heading -->
+    <div class="wsa-head text-center mb-14" id="wsaHead">
+<div style="display:inline-flex;align-items:center;font-family:'Raleway',sans-serif;gap:8px;color:#1E3A8A;font-size:clamp(1.125rem, 1.0446rem + 0.4018vw, 1.4063rem);font-weight:700;letter-spacing:0.1em;margin-bottom:16px;"><img src="/Icons/graduate.svg" alt="">Who Should Attend <img src="/Icons/graduate.svg" alt=""></div>
+<h2 class="font-[Raleway] font-bold text-[clamp(1.8rem,3.5vw,2.6rem)] leading-[1.2] 
+bg-gradient-to-r from-[#FF6B32] via-[#F09819] to-[#FF6932] 
+bg-clip-text text-transparent">
+  This Webinar Is Perfect For Parents Who
+</h2>
+    </div>
+
+<!-- 2×2 grid of cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+  <!-- Card 1 -->
+  <div class="wsa-card flex gap-4 items-start" id="wsaC1" style="transition-delay:0.05s;">
+    
+    <div class="wsa-icon-wrap w-14 h-14 flex items-center justify-center">
+      <img src="/Icons/attend-icon1.svg" alt="" class="w-10 h-10 object-contain">
+    </div>
+
+    <div>
+      <h4>Have children in Grade 5 to Grade 10</h4>
+      <div class="wsa-join flex items-center gap-2 mt-2">
+        <img src="/Icons/mdi_tick-circle.svg" alt="" class="w-5 h-5 object-contain">
+        <span>That's you ? Join us</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Card 2 -->
+  <div class="wsa-card flex gap-4 items-start" id="wsaC2" style="transition-delay:0.12s;">
+    
+    <div class="wsa-icon-wrap w-14 h-14 flex items-center justify-center">
+      <img src="/Icons/attend-icon2.svg" alt="" class="w-10 h-10 object-contain">
+    </div>
+
+    <div>
+      <h4>Want their child to develop confidence and communication skills</h4>
+      <div class="wsa-join flex items-center gap-2 mt-2">
+        <img src="/Icons/mdi_tick-circle.svg" alt="" class="w-5 h-5 object-contain">
+        <span>That's you ? Join us</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Card 3 -->
+  <div class="wsa-card flex gap-4 items-start" id="wsaC3" style="transition-delay:0.2s;">
+    
+    <div class="wsa-icon-wrap w-14 h-14 flex items-center justify-center">
+      <img src="/Icons/attend-icon3.svg" alt="" class="w-10 h-10 object-contain">
+    </div>
+
+    <div>
+      <h4>Believe education should go beyond textbooks</h4>
+      <div class="wsa-join flex items-center gap-2 mt-2">
+        <img src="/Icons/mdi_tick-circle.svg" alt="" class="w-5 h-5 object-contain">
+        <span>That's you ? Join us</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Card 4 -->
+  <div class="wsa-card flex gap-4 items-start" id="wsaC4" style="transition-delay:0.28s;">
+    
+    <div class="wsa-icon-wrap w-14 h-14 flex items-center justify-center">
+      <img src="/Icons/attend-icon4.svg" alt="" class="w-10 h-10 object-contain">
+    </div>
+
+    <div>
+      <h4>Want their child to think independently and understand the world</h4>
+      <div class="wsa-join flex items-center gap-2 mt-2">
+        <img src="/Icons/mdi_tick-circle.svg" alt="" class="w-5 h-5 object-contain">
+        <span>That's you ? Join us</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+  </div>
+</section>
+
+
+<section id="webinarDetails">
+  <div class="wd-inner">
+
+    <h2 class="wd-title" id="wdTitle">Webinar Details</h2>
+
+    <div class="wd-grid">
+
+      <!-- Date -->
+      <div class="wd-card" id="wdCard1" style="transition-delay:0.05s;">
+        <div class="wd-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="6" width="30" height="26" rx="4" stroke="#1D3E9E" stroke-width="2.2"/>
+            <path d="M3 14h30" stroke="#1D3E9E" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M12 3v6M24 3v6" stroke="#1D3E9E" stroke-width="2.2" stroke-linecap="round"/>
+            <rect x="9" y="19" width="4" height="4" rx="1" fill="#1D3E9E"/>
+            <rect x="16" y="19" width="4" height="4" rx="1" fill="#1D3E9E"/>
+            <rect x="23" y="19" width="4" height="4" rx="1" fill="#1D3E9E"/>
+            <rect x="9" y="25" width="4" height="4" rx="1" fill="#1D3E9E"/>
+            <rect x="16" y="25" width="4" height="4" rx="1" fill="#1D3E9E"/>
+          </svg>
+        </div>
+        <div class="wd-label">Date</div>
+        <div class="wd-value">26<sup>th</sup> March</div>
+      </div>
+
+      <!-- Time -->
+      <div class="wd-card" id="wdCard2" style="transition-delay:0.13s;">
+        <div class="wd-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="14" stroke="#1D3E9E" stroke-width="2.2"/>
+            <path d="M18 10v8l5 3" stroke="#1D3E9E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="18" cy="18" r="2" fill="#1D3E9E"/>
+          </svg>
+        </div>
+        <div class="wd-label">Time</div>
+        <div class="wd-value">11:30 AM IST</div>
+      </div>
+
+      <!-- Duration -->
+      <div class="wd-card" id="wdCard3" style="transition-delay:0.21s;">
+        <div class="wd-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="7" width="28" height="18" rx="3" stroke="#1D3E9E" stroke-width="2.2"/>
+            <path d="M12 29h12M18 25v4" stroke="#1D3E9E" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M10 16h16M14 12v8" stroke="#1D3E9E" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="wd-label">Duration</div>
+        <div class="wd-value">60 Min</div>
+      </div>
+
+      <!-- Mode -->
+      <div class="wd-card" id="wdCard4" style="transition-delay:0.29s;">
+        <div class="wd-icon">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="4" width="30" height="22" rx="3" stroke="#1D3E9E" stroke-width="2.2"/>
+            <path d="M12 32h12M18 26v6" stroke="#1D3E9E" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="18" cy="15" r="5" stroke="#1D3E9E" stroke-width="2"/>
+            <path d="M13 15c0-2.8 2.2-5 5-5" stroke="#e8722a" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M15 21c1-2 5-2 6 0" stroke="#e8722a" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="wd-label">Mode</div>
+        <div class="wd-value">Online (Zoom)</div>
+      </div>
+
+    </div>
+
+    <!-- Notice pill -->
+    <div class="wd-notice" id="wdNotice">
+      <div class="wd-notice-pill">
+        <div class="wd-notice-dot"></div>
+        Seats are limited to ensure an interactive experience
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="section">
+  <div class="inner">
+    <div class="left">
+<div class="badge">
+  <span class="flex items-center gap-x-2">
+    <img src="/Icons/graduate.svg" alt="">
+    FAQ
+    <img src="/Icons/graduate.svg" alt="">
+  </span>
+</div>
+      <h2 class="mt-2">Got <span>Questions?</span><br>We Have Answers.</h2>
+      <p>Everything parents want to know before joining the IAS Spark webinar — answered clearly.</p>
+
+      <div class="emblem-wrap">
+        <div class="emblem-glow"></div>
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+   <img src="/Icons/emblem-lg.svg" alt="">
+      </div>
+    </div>
+
+    <div class="right">
+      <div id="faq-list"></div>
+      <div class="still-bar">
+        <div>
+          <p>Still have a question?</p>
+          <h4>We're just a message away</h4>
+        </div>
+<a href="https://wa.me/919187046251?text=Hi%2C%20I%20have%20registered%20for%20the%20IAS%20Spark%20webinar.%20Please%20share%20more%20details%20about%20the%20session%20and%20reminders." 
+   target="_blank" 
+   class="wa-btn">
+
+<img src="/Icons/WhatsApp-logo.svg.webp" alt="" class="w-[30px] h-[30px]">
+
+  WhatsApp Us
+</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="regSection">
+  <div class="reg-inner">
+
+    <h2 class="reg-heading">
+      Give Your Child the Skills That<br/>School <span>Doesn't Teach</span>
+    </h2>
+    <p class="reg-sub">
+      Register now for the Free IAS Spark Parent Webinar and learn how to nurture leadership, confidence, and critical thinking in your child.
+    </p>
+
+    <h3 class="reg-form-title">Register for free webinar</h3>
+
+    <!-- FORM START -->
+    <form id="regForm">
+
+      <!-- Row 1 -->
+      <div class="reg-row">
+        <div class="reg-field">
+          <label class="reg-label">Parent/ Guardian's name<span class="req">*</span></label>
+          <input class="reg-input" type="text" name="name" placeholder="Enter your name here"/>
+        </div>
+        <div class="reg-field">
+          <label class="reg-label">Student grade<span class="req">*</span></label>
+          <div class="reg-select-wrap">
+            <select class="reg-select" name="grade">
+              <option value="" disabled selected>Select the grade here</option>
+              <option>Grade 1</option>
+              <option>Grade 2</option>
+              <option>Grade 3</option>
+              <option>Grade 4</option>
+              <option>Grade 5</option>
+              <option>Grade 6</option>
+              <option>Grade 7</option>
+              <option>Grade 8</option>
+              <option>Grade 9</option>
+              <option>Grade 10</option>
+              <option>Grade 11</option>
+              <option>Grade 12</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="reg-row">
+        <div class="reg-field">
+          <label class="reg-label">Mobile number<span class="req">*</span></label>
+          <input class="reg-input" type="tel" name="mobile" placeholder="Enter your mobile number"/>
+        </div>
+        <div class="reg-field">
+          <label class="reg-label">Email address<span class="req">*</span></label>
+          <input class="reg-input" type="email" name="email" placeholder="Enter your email address"/>
+        </div>
+      </div>
+
+      <!-- Row 3: City and Board -->
+      <div class="reg-row">
+        <div class="reg-field">
+          <label class="reg-label">City<span class="req">*</span></label>
+          <input class="reg-input" type="text" name="city" placeholder="Enter your city"/>
+        </div>
+        <div class="reg-field">
+          <label class="reg-label">Board<span class="req">*</span></label>
+          <div class="reg-select-wrap">
+            <select class="reg-select" name="board">
+              <option value="" disabled selected>Select board</option>
+              <option>CBSE Board</option>
+              <option>ICSE Board</option>
+              <option>STATE Board</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <button type="submit" class="reg-btn">Reserve my seat</button>
+
+      <!-- Security note -->
+      <div class="reg-secure">
+        <img src="/Icons/lock_1.svg" alt="">Your data will be secured with us
+      </div>
+
+    </form>
+    <!-- FORM END -->
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ══════════════════════
+     FOOTER
+══════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="/Icons/ias-spark-logo.svg" alt="" class="w-full h-8">
+    </div>
+    <p class="footer-copy">© 2025 IAS Spark. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════
+     JAVASCRIPT
+══════════════════════ -->
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+<script src="JS/date.js"></script>
+
+</body>
+</html>
