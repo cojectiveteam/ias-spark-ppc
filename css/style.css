@@ -1814,7 +1814,6 @@ section#aboutSection {
   background: #FFF3EE;
   padding: 60px 40px;
   font-family: 'Segoe UI', sans-serif;
-  min-height: 100vh;
   display: flex;
   align-items: center;
 }

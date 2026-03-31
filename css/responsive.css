@@ -337,7 +337,6 @@ section#aboutSection {
   #whoSection .who-grid {
     grid-template-columns: 1fr;
   }
-  .section {min-height: 66vh;}
 
   .wsa-card { padding: 24px 20px; }
 }
