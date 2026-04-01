@@ -1,507 +1,234 @@
-/* ============================================================
-   IAS SPARK — responsive.css (Media Queries)
-   ============================================================ */
-
-/* ─────────────────────────────────────────
-   BREAKPOINTS
-   xl  : 1280px  (large desktops)
-   lg  : 1024px  (laptops / landscape tablets)
-   md  : 900px   (tablets)
-   sm  : 768px   (small tablets)
-   xs  : 640px   (large phones)
-   xxs : 480px   (small phones)
-───────────────────────────────────────── */
-
-
-/* ─── NAVIGATION ─────────────────────── */
-@media (max-width: 768px) {
-  .nav-links { display: none; }
-
-  .nav-inner {
-    padding: 10px 16px;
-  }
-div#hsRight {
-    margin-left: 0%;
-}
-  .orange-btn {
-    padding: 8px 16px;
-    font-size: 0.8rem;
-  }
-}
-
-
-/* ─── HERO ────────────────────────────── */
-@media (max-width: 768px) {
-  .hero-content {
-    padding: 48px 26px 72px;
-  }
-}
-
-
-
-/* ─── STICKY BAR ─────────────────────── */
-@media (max-width: 768px) {
-  .sticky-bar-inner {
-    padding: 12px 20px;
-    gap: 14px;
-    justify-content: center;
-  }
-.still-bar {
-  padding: 10px 12px;
-  gap: 10px;
-}
-.inner {
-    gap: 10px;
-}
-  .sb-notice {
-    display: none;
-  }
-
-  .sb-box {
-    min-width: 46px;
-    padding: 6px 10px;
-  }
-
-  .sb-box span {
-    font-size: 1.2rem;
-  }
-
-  .sb-colon {
-    font-size: 1.2rem;
-    padding-bottom: 14px;
-  }
-
-  .sb-cta {
-    padding: 0 22px;
-    height: 44px;
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .sb-box {
-    min-width: 40px;
-    padding: 5px 8px;
-  }
-
-  .sb-box span {
-    font-size: 1.05rem;
-  }
-
-  .sb-label {
-    font-size: 0.62rem;
-  }
-}
-
-
-/* ─── TRUSTED SECTION ────────────────── */
-@media (max-width: 768px) {
-  #trustedSection {
-    padding: 48px 0 0;
-  }
-
-  .trust-pill {
-    font-size: 0.74rem;
-    padding: 7px 12px;
-  }
-}
-
-@media (max-width: 640px) {
-  .ts-slide {
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .ts-card { min-height: auto; }
-
-  #tsWrapper { cursor: auto; }
-  #tsCursor  { display: none; }
-}
-
-
-/* ─── PROBLEM SECTION ────────────────── */
-@media (max-width: 900px) {
-  #probSection {
-    padding: 40px 0 64px;
-  }
-
-  #probSection .prob-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #probSvgWrap {
-    display: none;
-  }
-
-  #probSection .prob-inner {
-    padding: 0 24px;
-  }
-}
-
-@media (max-width: 640px) {
-  #probSection .prob-grid {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .prob-feat { padding: 20px 0; }
-}
-
-
-/* ─── OPPORTUNITY SECTION ────────────── */
-@media (max-width: 900px) {
-  #oppSection .opp-main-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  #oppSection .opp-img-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  #oppSection {
-    padding: 60px 0;
-  }
-
-  #oppSection .opp-img-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-}
-
-
-/* ─── DISCOVER SECTION ───────────────── */
-@media (max-width: 768px) {
-  #discoverSection {
-    height: auto;
-    min-height: 100vh;
-  }
-
-  #discoverSticky {
-    position: relative;
-    height: auto;
-    padding: 48px 20px;
-  }
-
-  .disc2-card {
-    position: relative;
-    width: 100%;
-    margin-bottom: 16px;
-  }
-  #oppSection {
-    padding: 60px 0;
-}
-}
-
-
-/* ─── ABOUT SECTION ──────────────────── */
-@media (max-width: 860px) {
-  #aboutInner {
-    flex-direction: column;
-    padding: 60px 60px 60px;
-    gap: 40px;
-  }
-
-  #aboutImgCol {
-    width: 100%;
-    position: relative;
-    top: auto;
-  }
-
-  #aboutImgCol img {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-}
-
-
-
-/* ─── HOST SECTION ───────────────────── */
-@media (max-width: 900px) {
-  .hs-grid {
-    grid-template-columns: 1fr;
-    gap: 80px;
-  }
-
-  .hs-img-col {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .hs-stats3 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .hs-stats2 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .hs-wrap {
-    padding: 0 50px;
-  }
-
-  #hostSection {
-    padding: 120px 0 60px;
-  }
-
-  .hs-award { right: -50px; }
-}
-@media (max-width: 480px) {
-  #aboutImgCol img {
-    max-width: 100%;
-  }
-    .hs-wrap {
-        padding: 0 20px;
-    }
-  .about-quote2 {
-    padding: 24px 20px;
-  }
-.hs-award-icon img {
-    width: 70px;
-    height: 60px;
-}
-section#aboutSection {
-    margin-top: -110px !important;
-}
-    .hs-award {
-        right: -7px;
-    }
-    .hs-role-tag {
-      margin-bottom: 26px;
-    }
-    #hostSection {
-        padding: 120px 0 50px;
-    }
-
-    .section {
-      padding: 50px 20px;
-    }
-    #aboutInner {
-        padding: 50px 20px;
-    }
-
-    #probSection {
-        padding: 40px 0 34px;
-    }
-
-
-.ts-card {
-    border-radius: 0px 60px 0px 60px;
-    padding: 24px;
-}
-#oppSection {
-    padding: 50px 0;
-}
-
-
-
-
-
-}
-
-
-@media (max-width: 320px) {
-.nav-logo {
-    width: 100px;
-}
-
-}
-
-@media (max-width: 480px) {
-  .hs-stats3 {
-    grid-template-columns: 1fr;
-  }
-    .sb-cta {
-        width: stretch;
-    }
-  .hs-stats2 {
-    grid-template-columns: 1fr;
-  }
-
-  .hs-awards-row {
-    flex-direction: column;
-  }
-
-  .hs-trust {
-    flex-wrap: wrap;
-    white-space: normal;
-    justify-content: center;
-  }
-}
-
-
-/* ─── WHO SHOULD ATTEND ──────────────── */
-@media (max-width: 768px) {
-  #whoSection .who-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .wsa-card { padding: 24px 20px; }
-}
-
-@media (max-width: 480px) {
-  .wsa-icon-wrap {
-    width: 44px;
-    height: 44px;
-  }
-}
-
-
-/* ─── WEBINAR DETAILS ────────────────── */
-@media (max-width: 768px) {
-
-  #webinarDetails {
-    padding: 48px 24px;
-  }
-
-}
-
-@media (max-width: 480px) {
-  .wd-grid {
-  grid-template-columns: repeat(2, 1fr);
-  }
-  .inner {
-    grid-template-columns: repeat(1, 2fr);
-}
-  .wd-notice-pill {
-    padding: 10px 16px;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-}
-
-
-/* ─── FAQ SECTION ────────────────────── */
-@media (max-width: 900px) {
-  .faq2-inner {
-    grid-template-columns: 1fr;
-    gap: 48px;
-    padding: 0 24px;
-  }
-
-  .faq2-left {
-    align-items: center;
-    text-align: center;
-  }
-
-  .faq2-pillar img { width: 220px; }
-
-  #faqSection { padding: 60px 0; }
-}
-
-@media (max-width: 480px) {
-  .faq2-pillar img { width: 160px; }
-
-  .faq2-q { font-size: 0.88rem; }
-
-  .faq2-summary { padding: 16px 18px; }
-}
-
-
-/* ─── REGISTRATION FORM ──────────────── */
-@media (max-width: 600px) {
-  .reg-row {
-    grid-template-columns: 1fr;
-  }
-
-  #regSection {
-    padding: 60px 24px;
-  }
-
-  .reg-heading {
-    font-size: clamp(1.5rem, 7vw, 2rem);
-  }
-}
-
-@media (max-width: 400px) {
-  .reg-btn {
-    font-size: 0.95rem;
-    padding: 14px 0;
-  }
-}
-
-
-/* ─── FOOTER ─────────────────────────── */
-@media (max-width: 640px) {
-  .footer-inner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-  }
-}
-
-
-/* ─── GLOBAL SECTION PADDING ADJUSTMENTS ── */
-@media (max-width: 768px) {
-  .section-inner {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .section-inner {
-    padding: 0 16px;
-  }
-}
-
-
-
-/* Mobile & Tablet → show only 1 card */
 @media (max-width: 1023px) {
-  .ts-slide {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ts-card {
-    width: 100%;
-  }
-
-  /* 🔥 Hide second card */
-  .ts-card-alt {
-    display: none;
-  }
+.ts-slide{display:flex;flex-direction:column}
+.ts-card{width:100%}
+.ts-card-alt{display:none}
 }
-
-/* Desktop → show both cards */
 @media (min-width: 1024px) {
-  .ts-slide {
-    display: flex;
-    flex-direction: row;
-  }
-  .ts-card {
-    width: 50%;
-  }
-
-  .ts-card-alt {
-    display: block;
-  }
+.ts-slide{display:flex;flex-direction:row}
+.ts-card{width:50%}
+.ts-card-alt{display:block}
 }
-
-
+@media (max-width: 900px) {
+#probSection{padding:40px 0 64px}
+.faq2-inner{grid-template-columns:1fr;gap:48px;padding:0 24px}
+.faq2-left{align-items:center;text-align:center}
+.faq2-pillar img{width:220px}
+#faqSection{padding:60px 0}
+#probSection .prob-grid{grid-template-columns:1fr}
+#probSvgWrap{display:none}
+#oppSection .opp-main-grid{grid-template-columns:1fr;gap:32px}
+.hs-grid{grid-template-columns:1fr;gap:80px}
+.hs-img-col{max-width:100%;margin:0 auto}
+.hs-stats3{grid-template-columns:1fr 1fr}
+.hs-stats2{grid-template-columns:1fr 1fr}
+.hs-wrap{padding:0 50px}
+#hostSection{padding:120px 0 60px}
+.hs-award{right:-50px}
+#oppSection .opp-img-grid{grid-template-columns:1fr 1fr}
+#probSection .prob-inner{padding:0 24px}
+}
+@media (max-width: 860px) {
+#aboutInner{flex-direction:column;padding:60px;gap:40px}
+#aboutImgCol{width:100%;position:relative;top:auto}
+#aboutImgCol img{max-width:100%;margin:0 auto}
+}
+@media (max-width: 640px) {
+.ts-slide{flex-direction:column;gap:14px}
+.ts-card{min-height:auto}
+#tsWrapper{cursor:auto}
+#tsCursor{display:none}
+#probSection .prob-grid{grid-template-columns:1fr;gap:0}
+#oppSection{padding:60px 0}
+#oppSection .opp-img-grid{grid-template-columns:1fr;gap:12px}
+.prob-feat{padding:20px 0}
+.footer-inner{flex-direction:column;align-items:center;text-align:center;gap:8px}
+}
+@media (max-width: 600px) {
+.reg-row{grid-template-columns:1fr}
+#regSection{padding:60px 24px}
+.reg-heading{font-size:clamp(1.5rem,7vw,2rem)}
+}
+@media (max-width: 768px) {
+.nav-links{display:none}
+.section-inner{padding:0 20px;padding:0 20px}
+.nav-inner{padding:10px 16px}
+#whoSection .who-grid{grid-template-columns:1fr}
+.wsa-card{padding:24px 20px}
+div#hsRight{margin-left:0}
+.orange-btn{padding:8px 16px;font-size:.8rem}
+.hero-content{padding:48px 26px 72px}
+.sticky-bar-inner{padding:12px 20px;gap:14px;justify-content:center}
+.still-bar{padding:10px 12px;gap:10px}
+.inner{gap:10px}
+.sb-notice{display:none}
+.sb-box{min-width:46px;padding:6px 10px}
+.sb-box span{font-size:1.2rem}
+.sb-colon{font-size:1.2rem;padding-bottom:14px}
+.sb-cta{padding:0 22px;height:44px;font-size:.85rem}
+#trustedSection{padding:48px 0 0}
+.trust-pill{font-size:.74rem;padding:7px 12px}
+#discoverSection{height:auto;min-height:100vh}
+#discoverSticky{position:relative;height:auto;padding:48px 20px}
+.disc2-card{position:relative;width:100%;margin-bottom:16px}
+#oppSection{padding:60px 0}
+}
+@media (max-width: 400px) {
+.reg-btn{font-size:.95rem;padding:14px 0}
+}
 @media (max-width: 480px) {
-  .countdown-box {
-    min-width: 52px;
-    padding: 8px 10px;
-  }
-
-  .countdown-box .text-2xl {
-    font-size: 1.25rem;
-  }
-  .still-bar {
-    display: block;
-    padding: 16px 20px;
-    text-align: center;
+.sb-box{min-width:40px;padding:5px 8px}
+.sb-box span{font-size:1.05rem}
+.sb-label{font-size:.62rem}
+#aboutImgCol img{max-width:100%}
+.hs-wrap{padding:0 20px}
+.about-quote2{padding:24px 20px}
+.hs-award-icon img{width:70px;height:60px}
+section#aboutSection{margin-top:-110px!important}
+.hs-award{right:-7px}
+.hs-role-tag{margin-bottom:26px}
+#hostSection{padding:120px 0 50px}
+.section{padding:50px 20px}
+#aboutInner{padding:50px 20px}
+#probSection{padding:40px 0 34px}
+.ts-card{border-radius:0 60px 0 60px;padding:24px}
+#oppSection{padding:50px 0}
+.hs-stats3{grid-template-columns:1fr}
+.sb-cta{width:stretch}
+.hs-stats2{grid-template-columns:1fr}
+.hs-awards-row{flex-direction:column}
+.hs-trust{flex-wrap:wrap;white-space:normal;justify-content:center}
+.section-inner{padding:0 16px}
+.faq2-pillar img{width:160px}
+.faq2-q{font-size:.88rem}
+.faq2-summary{padding:16px 18px}
+.wsa-icon-wrap{width:44px;height:44px}
+.wd-grid{grid-template-columns:repeat(2,1fr)}
+.inner{grid-template-columns:repeat(1,2fr)}
+.wd-notice-pill{padding:10px 16px;font-size:.8rem;text-align:center}
+.countdown-box{min-width:52px;padding:8px 10px}
+.countdown-box .text-2xl{font-size:1.25rem}
+.still-bar{display:block;padding:16px 20px;text-align:center}
+.still-bar h4{margin-bottom:16px}
+.emblem-wrap{margin:0 auto}
+.wa-btn{gap:10px;width:56%;margin:0 auto}
 }
-.still-bar h4 {margin-bottom: 16px;}
-.emblem-wrap {margin: 0 auto;}
-.wa-btn {
-    gap: 10px;
-    width: 56%;
-    margin: 0 auto;
+@media (max-width: 320px) {
+.nav-logo{width:100px}
 }
-
+@media (max-width: 1023px) {
+.ts-slide{display:flex;flex-direction:column}
+.ts-card{width:100%}
+.ts-card-alt{display:none}
+}
+@media (min-width: 1024px) {
+.ts-slide{display:flex;flex-direction:row}
+.ts-card{width:50%}
+.ts-card-alt{display:block}
+}
+@media (max-width: 900px) {
+#probSection{padding:40px 0 64px}
+.faq2-inner{grid-template-columns:1fr;gap:48px;padding:0 24px}
+.faq2-left{align-items:center;text-align:center}
+.faq2-pillar img{width:220px}
+#faqSection{padding:60px 0}
+#probSection .prob-grid{grid-template-columns:1fr}
+#probSvgWrap{display:none}
+#oppSection .opp-main-grid{grid-template-columns:1fr;gap:32px}
+.hs-grid{grid-template-columns:1fr;gap:80px}
+.hs-img-col{max-width:100%;margin:0 auto}
+.hs-stats3{grid-template-columns:1fr 1fr}
+.hs-stats2{grid-template-columns:1fr 1fr}
+.hs-wrap{padding:0 50px}
+#hostSection{padding:120px 0 60px}
+.hs-award{right:-50px}
+#oppSection .opp-img-grid{grid-template-columns:1fr 1fr}
+#probSection .prob-inner{padding:0 24px}
+}
+@media (max-width: 860px) {
+#aboutInner{flex-direction:column;padding:60px;gap:40px}
+#aboutImgCol{width:100%;position:relative;top:auto}
+#aboutImgCol img{max-width:100%;margin:0 auto}
+}
+@media (max-width: 640px) {
+.ts-slide{flex-direction:column;gap:14px}
+.ts-card{min-height:auto}
+#tsWrapper{cursor:auto}
+#tsCursor{display:none}
+#probSection .prob-grid{grid-template-columns:1fr;gap:0}
+#oppSection{padding:60px 0}
+#oppSection .opp-img-grid{grid-template-columns:1fr;gap:12px}
+.prob-feat{padding:20px 0}
+.footer-inner{flex-direction:column;align-items:center;text-align:center;gap:8px}
+}
+@media (max-width: 600px) {
+.reg-row{grid-template-columns:1fr}
+#regSection{padding:60px 24px}
+.reg-heading{font-size:clamp(1.5rem,7vw,2rem)}
+}
+@media (max-width: 768px) {
+.nav-links{display:none}
+.section-inner{padding:0 20px;padding:0 20px}
+.nav-inner{padding:10px 16px}
+#whoSection .who-grid{grid-template-columns:1fr}
+.wsa-card{padding:24px 20px}
+div#hsRight{margin-left:0}
+.orange-btn{padding:8px 16px;font-size:.8rem}
+.hero-content{padding:48px 26px 72px}
+.sticky-bar-inner{padding:12px 20px;gap:14px;justify-content:center}
+.still-bar{padding:10px 12px;gap:10px}
+.inner{gap:10px}
+.sb-notice{display:none}
+.sb-box{min-width:46px;padding:6px 10px}
+.sb-box span{font-size:1.2rem}
+.sb-colon{font-size:1.2rem;padding-bottom:14px}
+.sb-cta{padding:0 22px;height:44px;font-size:.85rem}
+#trustedSection{padding:48px 0 0}
+.trust-pill{font-size:.74rem;padding:7px 12px}
+#discoverSection{height:auto;min-height:100vh}
+#discoverSticky{position:relative;height:auto;padding:48px 20px}
+.disc2-card{position:relative;width:100%;margin-bottom:16px}
+#oppSection{padding:60px 0}
+}
+@media (max-width: 400px) {
+.reg-btn{font-size:.95rem;padding:14px 0}
+}
+@media (max-width: 480px) {
+.sb-box{min-width:40px;padding:5px 8px}
+.sb-box span{font-size:1.05rem}
+.sb-label{font-size:.62rem}
+#aboutImgCol img{max-width:100%}
+.hs-wrap{padding:0 20px}
+.about-quote2{padding:24px 20px}
+.hs-award-icon img{width:70px;height:60px}
+section#aboutSection{margin-top:-110px!important}
+.hs-award{right:-7px}
+.hs-role-tag{margin-bottom:26px}
+#hostSection{padding:120px 0 50px}
+.section{padding:50px 20px}
+#aboutInner{padding:50px 20px}
+#probSection{padding:40px 0 34px}
+.ts-card{border-radius:0 60px 0 60px;padding:24px}
+#oppSection{padding:50px 0}
+.hs-stats3{grid-template-columns:1fr}
+.sb-cta{width:stretch}
+.hs-stats2{grid-template-columns:1fr}
+.hs-awards-row{flex-direction:column}
+.hs-trust{flex-wrap:wrap;white-space:normal;justify-content:center}
+.section-inner{padding:0 16px}
+.faq2-pillar img{width:160px}
+.faq2-q{font-size:.88rem}
+.faq2-summary{padding:16px 18px}
+.wsa-icon-wrap{width:44px;height:44px}
+.wd-grid{grid-template-columns:repeat(2,1fr)}
+.inner{grid-template-columns:repeat(1,2fr)}
+.wd-notice-pill{padding:10px 16px;font-size:.8rem;text-align:center}
+.countdown-box{min-width:52px;padding:8px 10px}
+.countdown-box .text-2xl{font-size:1.25rem}
+.still-bar{display:block;padding:16px 20px;text-align:center}
+.still-bar h4{margin-bottom:16px}
+.emblem-wrap{margin:0 auto}
+.wa-btn{gap:10px;width:56%;margin:0 auto}
+}
+@media (max-width: 320px) {
+.nav-logo{width:100px}
 }

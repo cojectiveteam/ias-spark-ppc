@@ -1,399 +1,133 @@
-/* ============================================================
-   IAS SPARK — animation.css (All Animations & Transitions)
-   ============================================================ */
-
-/* ─────────────────────────────────────────
-   1. KEYFRAME DEFINITIONS
-───────────────────────────────────────── */
-
-/* General fade up entrance */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(22px); }
-  to   { opacity: 1; transform: translateY(0); }
+from{opacity:0;transform:translateY(22px)}
+to{opacity:1;transform:translateY(0)}
 }
-
-/* Button shine sweep */
 @keyframes btnShine {
-  0%   { left: -75%; }
-  40%  { left: 125%; }
-  100% { left: 125%; }
+0%{left:-75%}
+40%{left:125%}
+100%{left:125%}
 }
-
-/* Spinning ring animations (trust section circles) */
-@keyframes rotateCW  { from { transform: rotate(0deg);   } to { transform: rotate(360deg);  } }
-@keyframes rotateCCW { from { transform: rotate(0deg);   } to { transform: rotate(-360deg); } }
-
-/* Problem section SVG rings */
+@keyframes rotateCW {
+from{transform:rotate(0deg)}
+to{transform:rotate(360deg)}
+}
+@keyframes rotateCCW {
+from{transform:rotate(0deg)}
+to{transform:rotate(-360deg)}
+}
 @keyframes probDrawOuter {
-  0%   { stroke-dashoffset: 565; opacity: 0.4; }
-  100% { stroke-dashoffset: 0;   opacity: 1;   }
+0%{stroke-dashoffset:565;opacity:.4}
+100%{stroke-dashoffset:0;opacity:1}
 }
 @keyframes probDrawInner {
-  0%   { stroke-dashoffset: 345; opacity: 0.4; }
-  100% { stroke-dashoffset: 0;   opacity: 1;   }
+0%{stroke-dashoffset:345;opacity:.4}
+100%{stroke-dashoffset:0;opacity:1}
 }
 @keyframes probSpinSlow {
-  from { transform: rotate(0deg);   transform-origin: 90px 90px; }
-  to   { transform: rotate(360deg); transform-origin: 90px 90px; }
+from{transform:rotate(0deg);transform-origin:90px 90px}
+to{transform:rotate(360deg);transform-origin:90px 90px}
 }
 @keyframes probSpinRev {
-  from { transform: rotate(0deg);    transform-origin: 55px 120px; }
-  to   { transform: rotate(-360deg); transform-origin: 55px 120px; }
+from{transform:rotate(0deg);transform-origin:55px 120px}
+to{transform:rotate(-360deg);transform-origin:55px 120px}
 }
-
-/* Host section animations */
 @keyframes hsRingGlow {
-  0%, 100% { opacity: 0.5; transform: scale(1); }
-  50%       { opacity: 1;   transform: scale(1.012); }
+0%,100%{opacity:.5;transform:scale(1)}
+50%{opacity:1;transform:scale(1.012)}
 }
 @keyframes hsTwinkle {
-  0%, 100% { opacity: 0.2; transform: scale(1); }
-  50%       { opacity: 0.8; transform: scale(1.4); }
+0%,100%{opacity:.2;transform:scale(1)}
+50%{opacity:.8;transform:scale(1.4)}
 }
 @keyframes hsDrift1 {
-  0%, 100% { transform: translate(0, 0); }
-  50%       { transform: translate(30px, -40px); }
+0%,100%{transform:translate(0,0)}
+50%{transform:translate(30px,-40px)}
 }
 @keyframes hsDrift2 {
-  0%, 100% { transform: translate(0, 0); }
-  50%       { transform: translate(-30px, 25px); }
+0%,100%{transform:translate(0,0)}
+50%{transform:translate(-30px,25px)}
 }
-
-/* FAQ pillar glow */
 @keyframes faqGlow {
-  0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
-  50%       { opacity: 1;   transform: translate(-50%, -50%) scale(1.08); }
+0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(1)}
+50%{opacity:1;transform:translate(-50%,-50%) scale(1.08)}
 }
-
-/* Webinar details notice dot pulse */
 @keyframes wdPulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(232,114,42,0.5); }
-  50%       { box-shadow: 0 0 0 6px rgba(232,114,42,0); }
+0%,100%{box-shadow:0 0 0 0 #e8722a80}
+50%{box-shadow:0 0 0 6px #e8722a00}
 }
-
-
-/* ─────────────────────────────────────────
-   2. BUTTON SHINE
-───────────────────────────────────────── */
-.orange-btn::after,
-.reg-btn::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent 0%,
-    rgba(255,255,255,0.22) 50%,
-    transparent 100%
-  );
-  transform: skewX(-20deg);
-  animation: btnShine 2.8s ease-in-out infinite;
-}
-
-
-/* ─────────────────────────────────────────
-   3. HERO FADE-UP ANIMATIONS
-───────────────────────────────────────── */
-.fade-up { animation: fadeUp 0.6s ease both; }
-.d1 { animation-delay: 0.15s; }
-.d2 { animation-delay: 0.25s; }
-.d3 { animation-delay: 0.35s; }
-
-
-/* ─────────────────────────────────────────
-   4. TRUST SECTION — SPINNING CIRCLES
-───────────────────────────────────────── */
-.trust-circle-svg .c1-wrap {
-  transform-origin: 160px 80px;
-  animation: rotateCW 8s linear infinite;
-}
-.trust-circle-svg .c2-wrap {
-  transform-origin: 110px 130px;
-  animation: rotateCCW 6s linear infinite;
-}
-.trust-circle-svg .c1 {
-  stroke-dasharray: 220 180;
-  stroke-dashoffset: 0;
-}
-.trust-circle-svg .c2 {
-  stroke-dasharray: 160 150;
-  stroke-dashoffset: 0;
-}
-
-
-/* ─────────────────────────────────────────
-   5. PROBLEM SECTION — SVG DRAW ANIMATION
-───────────────────────────────────────── */
-#probSvgWrap .prob-ring-outer {
-  stroke-dasharray: 565;
-  stroke-dashoffset: 565;
-}
-#probSvgWrap .prob-ring-inner {
-  stroke-dasharray: 345;
-  stroke-dashoffset: 345;
-}
-#probSvgWrap.prob-drawn .prob-ring-outer {
-  animation: probDrawOuter 2s cubic-bezier(0.4,0,0.2,1) forwards,
-             probSpinSlow 12s linear 2s infinite;
-}
-#probSvgWrap.prob-drawn .prob-ring-inner {
-  animation: probDrawInner 1.6s cubic-bezier(0.4,0,0.2,1) 0.4s forwards,
-             probSpinRev 9s linear 2s infinite;
-}
-
-/* Scroll reveal for problem features */
-.prob-feat {
-  opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
-}
-.prob-feat.prob-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-/* ─────────────────────────────────────────
-   6. OPPORTUNITY SECTION — SCROLL REVEAL
-───────────────────────────────────────── */
-.opp-img-left  { opacity: 0; transform: translateX(-48px); transition: opacity 0.7s ease, transform 0.7s ease; }
-.opp-img-right { opacity: 0; transform: translateX(48px);  transition: opacity 0.7s ease, transform 0.7s ease; }
-.opp-row       { opacity: 0; transform: translateX(40px);  transition: opacity 0.55s ease, transform 0.55s ease; }
-.opp-heading   { opacity: 0; transform: translateY(28px);  transition: opacity 0.6s ease, transform 0.6s ease; }
-
-.opp-img-left.opp-in,
-.opp-img-right.opp-in,
-.opp-row.opp-in,
-.opp-heading.opp-in { opacity: 1; transform: translate(0,0); }
-
-
-/* ─────────────────────────────────────────
-   7. DISCOVER SECTION — SCROLL-DRIVEN CARDS
-───────────────────────────────────────── */
-.disc2-card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s cubic-bezier(0.22,1,0.36,1), transform 0.6s cubic-bezier(0.22,1,0.36,1);
-}
-.disc2-card.active { opacity: 1; transform: translateY(0); }
-
-.disc2-dot {
-  opacity: 0;
-  transform: scale(0);
-  transition: opacity 0.35s ease, transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
-}
-.disc2-dot.active { opacity: 1; transform: scale(1); }
-
-
-/* ─────────────────────────────────────────
-   8. ABOUT SECTION — SCROLL REVEAL
-───────────────────────────────────────── */
-.about-heading {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.about-heading.av { opacity: 1; transform: translateY(0); }
-
-.about-sc {
-  opacity: 0;
-  transform: translateX(-32px);
-  transition: opacity 0.55s ease, transform 0.55s ease, box-shadow 0.2s ease;
-}
-.about-sc:hover {
-  transform: translateX(0) translateY(-3px) !important;
-}
-.about-sc.av { opacity: 1; transform: translateX(0); }
-
-.about-quote2 {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
-}
-.about-quote2.av { opacity: 1; transform: translateY(0); }
-
-
-/* ─────────────────────────────────────────
-   9. HOST SECTION — SCROLL REVEAL
-───────────────────────────────────────── */
-.hs-ring {
-  animation: hsRingGlow 3.5s ease-in-out infinite;
-}
-.hs-ring2 {
-  animation: hsRingGlow 3.5s ease-in-out infinite 0.8s;
-}
-
-.hs-star-dot {
-  animation: hsTwinkle var(--dur, 3s) ease-in-out infinite var(--delay, 0s);
-}
-
-/* Orb drifts */
-.hs-orb-1 { animation: hsDrift1 10s ease-in-out infinite; }
-.hs-orb-2 { animation: hsDrift2 13s ease-in-out infinite; }
-
-.hs-lbl {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.hs-lbl.hv { opacity: 1; transform: translateY(0); }
-
-.hs-h2 {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s;
-}
-.hs-h2.hv { opacity: 1; transform: translateY(0); }
-
-.hs-img-col {
-  opacity: 0;
-  transform: translateX(-45px);
-  transition: opacity 0.9s cubic-bezier(.22,1,.36,1), transform 0.9s cubic-bezier(.22,1,.36,1);
-}
-.hs-img-col.hv { opacity: 1; transform: translateX(0); }
-
-.hs-award {
-  opacity: 0;
-  transform: translateY(18px) scale(0.85);
-  transition: opacity 0.55s ease 0.7s, transform 0.6s cubic-bezier(.34,1.56,.64,1) 0.7s;
-}
-.hs-award.hv { opacity: 1; transform: translateY(0) scale(1); }
-
-.hs-trust {
-  opacity: 0;
-  transform: translateX(-50%) translateY(16px);
-  transition: opacity 0.55s ease 1s, transform 0.55s ease 1s;
-}
-.hs-trust.hv { opacity: 1; transform: translateX(-50%) translateY(0); }
-
-.hs-right {
-  opacity: 0;
-  transform: translateX(40px);
-  transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
-}
-.hs-right.hv { opacity: 1; transform: translateX(0); }
-
-.hs-awards-row {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.55s ease 0.35s, transform 0.55s ease 0.35s;
-}
-.hs-awards-row.hv { opacity: 1; transform: translateY(0); }
-
-.hs-stats3,
-.hs-stats2 {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.55s ease, transform 0.55s ease;
-}
-.hs-stats3.hv,
-.hs-stats2.hv { opacity: 1; transform: translateY(0); }
-
-
-/* ─────────────────────────────────────────
-   10. WHO SECTION — SCROLL REVEAL
-───────────────────────────────────────── */
-.wsa-head {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.wsa-head.wv { opacity: 1; transform: translateY(0); }
-
-.wsa-card {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.55s ease, transform 0.55s ease, box-shadow 0.2s ease;
-}
-.wsa-card:hover { transform: translateY(-4px) !important; }
-.wsa-card.wv    { opacity: 1; transform: translateY(0); }
-
-
-/* ─────────────────────────────────────────
-   11. WEBINAR DETAILS — SCROLL REVEAL
-───────────────────────────────────────── */
-.wd-title {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.wd-title.wdv { opacity: 1; transform: translateY(0); }
-
-.wd-card {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.55s ease, transform 0.55s ease, box-shadow 0.2s ease;
-}
-.wd-card:hover { transform: translateY(-4px) !important; }
-.wd-card.wdv   { opacity: 1; transform: translateY(0); }
-
-.wd-notice {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.55s ease 0.4s, transform 0.55s ease 0.4s;
-}
-.wd-notice.wdv { opacity: 1; transform: translateY(0); }
-
-.wd-notice-dot {
-  animation: wdPulse 1.8s ease-in-out infinite;
-}
-
-
-/* ─────────────────────────────────────────
-   12. FAQ SECTION — SCROLL REVEAL
-───────────────────────────────────────── */
-.faq2-label {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.faq2-label.fv { opacity: 1; transform: translateY(0); }
-
-.faq2-heading {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.6s ease 0.1s, transform 0.6s ease 0.1s;
-}
-.faq2-heading.fv { opacity: 1; transform: translateY(0); }
-
-.faq2-pillar {
-  position: relative;
-  opacity: 0;
-  transform: translateX(-30px) scale(0.96);
-  transition: opacity 0.9s cubic-bezier(.22,1,.36,1) 0.15s,
-              transform 0.9s cubic-bezier(.22,1,.36,1) 0.15s;
-}
-.faq2-pillar.fv { opacity: 1; transform: translateX(0) scale(1); }
-
-/* Glow behind pillar */
-.faq2-pillar::before {
-  content: '';
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(232,114,42,0.12) 0%, transparent 70%);
-  z-index: 0;
-  animation: faqGlow 4s ease-in-out infinite;
-}
-
-.faq2-pillar img { position: relative; z-index: 1; }
-
-.faq2-right {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.faq2-item {
-  opacity: 0;
-  transform: translateX(40px);
-  transition: opacity 0.55s ease, transform 0.55s ease, box-shadow 0.2s ease;
-}
-.faq2-item.fv { opacity: 1; transform: translateX(0); }
+.orange-btn::after,.reg-btn::after{content:'';position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(120deg,transparent 0%,#ffffff38 50%,transparent 100%);transform:skewX(-20deg);animation:btnShine 2.8s ease-in-out infinite}
+.fade-up{animation:fadeUp .6s ease both}
+.d1{animation-delay:.15s}
+.d2{animation-delay:.25s}
+.d3{animation-delay:.35s}
+.trust-circle-svg .c1-wrap{transform-origin:160px 80px;animation:rotateCW 8s linear infinite}
+.trust-circle-svg .c2-wrap{transform-origin:110px 130px;animation:rotateCCW 6s linear infinite}
+.trust-circle-svg .c1{stroke-dasharray:220 180;stroke-dashoffset:0}
+.trust-circle-svg .c2{stroke-dasharray:160 150;stroke-dashoffset:0}
+#probSvgWrap .prob-ring-outer{stroke-dasharray:565;stroke-dashoffset:565}
+#probSvgWrap .prob-ring-inner{stroke-dasharray:345;stroke-dashoffset:345}
+#probSvgWrap.prob-drawn .prob-ring-outer{animation:probDrawOuter 2s cubic-bezier(0.4,0,0.2,1) forwards,probSpinSlow 12s linear 2s infinite}
+#probSvgWrap.prob-drawn .prob-ring-inner{animation:probDrawInner 1.6s cubic-bezier(0.4,0,0.2,1) .4s forwards,probSpinRev 9s linear 2s infinite}
+.prob-feat{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
+.prob-feat.prob-visible{opacity:1;transform:translateY(0)}
+.opp-img-left{opacity:0;transform:translateX(-48px);transition:opacity .7s ease,transform .7s ease}
+.opp-img-right{opacity:0;transform:translateX(48px);transition:opacity .7s ease,transform .7s ease}
+.opp-row{opacity:0;transform:translateX(40px);transition:opacity .55s ease,transform .55s ease}
+.opp-heading{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.opp-img-left.opp-in,.opp-img-right.opp-in,.opp-row.opp-in,.opp-heading.opp-in{opacity:1;transform:translate(0,0)}
+.disc2-card{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(0.22,1,0.36,1),transform .6s cubic-bezier(0.22,1,0.36,1)}
+.disc2-card.active{opacity:1;transform:translateY(0)}
+.disc2-dot{opacity:0;transform:scale(0);transition:opacity .35s ease,transform .4s cubic-bezier(0.34,1.56,0.64,1)}
+.disc2-dot.active{opacity:1;transform:scale(1)}
+.about-heading{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.about-heading.av{opacity:1;transform:translateY(0)}
+.about-sc{opacity:0;transform:translateX(-32px);transition:opacity .55s ease,transform .55s ease,box-shadow .2s ease}
+.about-sc:hover{transform:translateX(0) translateY(-3px)!important}
+.about-sc.av{opacity:1;transform:translateX(0)}
+.about-quote2{opacity:0;transform:translateY(24px);transition:opacity .6s ease 0.2s,transform .6s ease .2s}
+.about-quote2.av{opacity:1;transform:translateY(0)}
+.hs-ring{animation:hsRingGlow 3.5s ease-in-out infinite}
+.hs-ring2{animation:hsRingGlow 3.5s ease-in-out infinite .8s}
+.hs-star-dot{animation:hsTwinkle var(--dur,3s) ease-in-out infinite var(--delay,0s)}
+.hs-orb-1{animation:hsDrift1 10s ease-in-out infinite}
+.hs-orb-2{animation:hsDrift2 13s ease-in-out infinite}
+.hs-lbl{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.hs-lbl.hv{opacity:1;transform:translateY(0)}
+.hs-h2{opacity:0;transform:translateY(18px);transition:opacity .6s ease 0.1s,transform .6s ease .1s}
+.hs-h2.hv{opacity:1;transform:translateY(0)}
+.hs-img-col{opacity:0;transform:translateX(-45px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+.hs-img-col.hv{opacity:1;transform:translateX(0)}
+.hs-award{opacity:0;transform:translateY(18px) scale(0.85);transition:opacity .55s ease 0.7s,transform .6s cubic-bezier(.34,1.56,.64,1) .7s}
+.hs-award.hv{opacity:1;transform:translateY(0) scale(1)}
+.hs-trust{opacity:0;transform:translateX(-50%) translateY(16px);transition:opacity .55s ease 1s,transform .55s ease 1s}
+.hs-trust.hv{opacity:1;transform:translateX(-50%) translateY(0)}
+.hs-right{opacity:0;transform:translateX(40px);transition:opacity .8s ease 0.2s,transform .8s ease .2s}
+.hs-right.hv{opacity:1;transform:translateX(0)}
+.hs-awards-row{opacity:0;transform:translateY(16px);transition:opacity .55s ease 0.35s,transform .55s ease .35s}
+.hs-awards-row.hv{opacity:1;transform:translateY(0)}
+.hs-stats3,.hs-stats2{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.hs-stats3.hv,.hs-stats2.hv{opacity:1;transform:translateY(0)}
+.wsa-head{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.wsa-head.wv{opacity:1;transform:translateY(0)}
+.wsa-card{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease,box-shadow .2s ease}
+.wsa-card:hover{transform:translateY(-4px)!important}
+.wsa-card.wv{opacity:1;transform:translateY(0)}
+.wd-title{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.wd-title.wdv{opacity:1;transform:translateY(0)}
+.wd-card{opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s ease,box-shadow .2s ease}
+.wd-card:hover{transform:translateY(-4px)!important}
+.wd-card.wdv{opacity:1;transform:translateY(0)}
+.wd-notice{opacity:0;transform:translateY(14px);transition:opacity .55s ease 0.4s,transform .55s ease .4s}
+.wd-notice.wdv{opacity:1;transform:translateY(0)}
+.wd-notice-dot{animation:wdPulse 1.8s ease-in-out infinite}
+.faq2-label{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.faq2-label.fv{opacity:1;transform:translateY(0)}
+.faq2-heading{opacity:0;transform:translateY(18px);transition:opacity .6s ease 0.1s,transform .6s ease .1s}
+.faq2-heading.fv{opacity:1;transform:translateY(0)}
+.faq2-pillar{position:relative;opacity:0;transform:translateX(-30px) scale(0.96);transition:opacity .9s cubic-bezier(.22,1,.36,1) 0.15s,transform .9s cubic-bezier(.22,1,.36,1) .15s}
+.faq2-pillar.fv{opacity:1;transform:translateX(0) scale(1)}
+.faq2-pillar::before{content:'';position:absolute;top:20%;left:50%;transform:translate(-50%,-50%);width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,#e8722a1f 0%,transparent 70%);z-index:0;animation:faqGlow 4s ease-in-out infinite}
+.faq2-pillar img{position:relative;z-index:1}
+.faq2-right{display:flex;flex-direction:column;gap:16px}
+.faq2-item{opacity:0;transform:translateX(40px);transition:opacity .55s ease,transform .55s ease,box-shadow .2s ease}
+.faq2-item.fv{opacity:1;transform:translateX(0)}
