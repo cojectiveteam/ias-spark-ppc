@@ -494,7 +494,14 @@ section#aboutSection {
   .still-bar {
     display: block;
     padding: 16px 20px;
+    text-align: center;
 }
 .still-bar h4 {margin-bottom: 16px;}
+.emblem-wrap {margin: 0 auto;}
+.wa-btn {
+    gap: 10px;
+    width: 56%;
+    margin: 0 auto;
+}
 
 }
